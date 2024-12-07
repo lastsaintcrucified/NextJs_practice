@@ -1,0 +1,7 @@
+{
+	"vs-code-prettier-eslint.prettierLast": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"notebook.defaultFormatter": "esbenp.prettier-vscode"
+}
