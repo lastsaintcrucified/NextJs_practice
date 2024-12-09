@@ -9,11 +9,9 @@ export const metadata: Metadata = {
 export default async function CustomersPage({
 	searchParams,
 }: {
-	searchParams?: {
-		query?: string;
-	};
+	searchParams?: Promise<{ query: string }>;
 }) {
-	const query = searchParams?.query || "";
+	const query = (await searchParams)?.query || "";
 	return (
 		<Suspense fallback={<p>Loading...</p>}>
 			<CustomersTable query={query} />
